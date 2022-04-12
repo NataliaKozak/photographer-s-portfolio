@@ -1,0 +1,98 @@
+header{
+	position: relative;
+	height: 100px;
+	z-index: 1;
+}
+body {
+	font-family:"Playfair Display";
+	padding: 0;
+	margin:0;
+}
+.slid{
+	width: 533px;
+	height: 800px;
+	margin: 0 0 0 120px;
+	z-index: 0;
+}
+.text_z{
+	font-family:"Playfair Display";
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	color: black;
+	line-height: 0.1;
+	margin: 0 0 50px 220px;
+}
+
+.friends{
+	margin: 100px 0px 0px 0px;
+	text-align: center;
+	font-family: "Playfair Display";
+	font-size: 20px;
+	text-decoration: underline;
+	letter-spacing: 5px;
+	text-shadow: 0px 0px 1px black;
+}
+.links{
+	margin-top: 5px;
+	text-align: center;
+	font-family: "Playfair Display";
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+ul{
+	padding-left: 0px;
+}
+.links li{
+	display: inline;
+	list-style-type: none;
+	text-align: center;
+}
+a{
+	font-family: "Playfair Display";
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: gray;
+}
+.form{
+	margin-left: 200px;
+}
+.clearfloat{
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+	table td{
+		display: block;
+	}
+	table{
+
+		justify-content: center;
+	}
+	.slid{
+		margin-left: 7px;
+		width: 470px;
+	}
+	.form{
+		margin-left: 0px;
+	}
+	html{
+		overflow-x: hidden;
+	}
+
+}
+@media screen and (min-device-width: 800px) and (max-device-width: 900px) {
+	table td{
+		display: block;
+	}
+	.slid{
+		margin-left: 180px;
+	}
+	.form{
+		justify-content: center;
+	}
+	html{
+		overflow-x: hidden;
+	}
+
+}

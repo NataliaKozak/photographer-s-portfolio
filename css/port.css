@@ -1,0 +1,205 @@
+header{
+	position: relative;
+	height: 80px;
+	z-index: 1;
+}
+div{
+	box-sizing: border-box;
+}
+body {
+	font-family:"Playfair Display";
+	padding: 0;
+	margin:0;
+}
+ul.car li{
+	display: inline-block;
+}
+ul.menu_c li{
+	display: inline-block;
+}
+.carousel{
+	width: 600px;
+	margin-left: 140px;
+	
+}
+.carousel_k{
+	width: 640px;
+	margin-left: 20px;
+}
+.carousel_c{
+	margin-left: 90px;
+}
+.carousel_l{
+	width: 640px;
+	margin-top: 50px;
+	margin-left: 130px;
+}
+.carousel_sem{
+	width: 600px;
+	margin-top: 80px;
+	margin-left: 20px;
+}
+.carousel_q{
+	width: 750px;
+	margin-left: 400px;
+	margin-top: 80px;
+}
+
+.carousel_d{
+	width: 1200px;
+	margin-top: 50px;
+	margin-left: 120px;
+	margin-bottom: 100px;
+}
+.carousel_sash{
+	width: 500px;
+	margin-top: 20px;
+	margin-left: 205px;
+	
+}
+.carousel_diz{
+	width: 520px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.carousel_y{
+	width: 1300px;
+	margin: 50px 0 0 80px;
+}
+.friends{
+	margin: 100px 0px 0px 0px;
+	text-align: center;
+	font-family: "Playfair Display";
+	font-size: 20px;
+	text-decoration: underline;
+	letter-spacing: 5px;
+	text-shadow: 0px 0px 1px black;
+}
+
+.links{
+	margin-top: 5px;
+	text-align: center;
+	font-family: "Playfair Display";
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+ul{
+	padding-left: 0px;
+}
+.links li{
+	display: inline;
+	list-style-type: none;
+	text-align: center;
+}
+a{
+	font-family: "Playfair Display";
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: gray;
+}
+.clearfloat{
+	clear: both;
+}
+@media screen and (width: 500px){
+	.carousel img{
+		width: 470px;
+		height: 588px;
+	}
+	.carousel{
+		width: 470px;
+		height: 588px;
+		margin-left: 7px;
+	}
+	.carousel_k img{
+		width: 470px;
+		height: 588px;
+	}
+	.carousel_k{
+		width: 470px;
+		height: 588px;
+		margin-left: 7px;
+	}
+	.carousel_c img{
+		width: 470px;
+		height: 313px;
+	}
+	.carousel_c{
+		width: 470px;
+		height: 313px;
+		margin-left: 7px;
+	}
+	.carousel_l img{
+		width: 470px;
+		height: 588px;
+	}
+	.carousel_l{
+		width: 470px;
+		height: 588px;
+		margin-left: 7px;
+	}
+	.carousel_sem img{
+		width: 470px;
+		height: 705px;
+	}
+	.carousel_sem{
+		width: 470px;
+		height: 705px;
+		margin-left: 7px;
+	}
+	.carousel_q img{
+		width: 470px;
+		height: 588px;
+	}
+	.carousel_q{
+		width: 470px;
+		height: 588px;
+		margin-left: 7px;
+	}
+	.carousel_d img{
+		width: 470px;
+		height: 349px;
+	}
+	.carousel_d{
+		width: 470px;
+		height: 349px;
+		margin-left: 7px;
+	}
+	.carousel_sash img{
+		width: 470px;
+		height: 705px;
+	}
+	.carousel_sash{
+		width: 470px;
+		height: 705px;
+		margin-left: 7px;
+	}
+	.carousel_diz img{
+		width: 468px;
+		height: 704px;
+		margin-left: 7px;
+	}
+	.carousel_diz{
+		width: 468px;
+		height: 704px;
+		margin-left: 7px;
+	}
+	.carousel_y img{
+		width: 470px;
+		height: 350px;
+	}
+	.carousel_y{
+		width: 470px;
+		height: 350px;
+		margin-left: 7px;
+	}
+	.friends{
+		margin-top: 30px;
+	}
+	
+	html{
+		overflow-x: hidden;
+	}
+
+}

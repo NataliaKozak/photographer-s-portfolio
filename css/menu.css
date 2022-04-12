@@ -1,0 +1,133 @@
+.container{
+	width: 90%;
+	margin: 0 auto;
+	border: 2px solid #fff;
+}
+
+.menu_fixed{
+	position: fixed;
+	top: 0;
+    width: 100%;
+    animation-name: show_fixed;
+	animation-duration: 1s;
+}
+@keyframes show_fixed{
+	0%{
+		opacity: 0;
+	    top:-70;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+	}
+}
+.logo{
+	padding-top: 20px;
+	float: left;
+}
+nav{
+	float: right;
+	padding-top: 30px;
+}
+.menu{
+	background: #fff;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+.menu li{
+	float: left;
+	display: block;
+	margin-right: 30px;
+}
+.menu li a{
+	color: black;
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: gray;
+}
+.menu-btn{
+	display: none;	
+}
+.menu-nav{
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	nav{
+		display: none;
+	}
+	.menu-btn{
+		display: block;
+		float: right;
+		margin: 15px 15px 0 0;
+		width: 50px;
+		height: 50px;
+		background-color: #fff;
+		border-radius: 50%;
+		position: relative;
+	}
+	.menu-btn span::before,
+	.menu-btn span::after,
+	.menu-btn span{
+		position: absolute;
+		top: 50%; margin-top: -1px;
+		left: 50%; margin-left: -10px;
+		width: 20px;
+		height: 2px;
+		background-color: #222;
+	}
+	/*Создаание двух псевдо элементов*/
+	.menu-btn span::before,
+	.menu-btn span::after{
+		content: '';
+		display: block;
+		transition: 0.2s;
+	}
+	.menu-btn span::before{
+		transform: translateY(-5px);
+	}
+	.menu-btn span::after{
+		transform: translateY(5px);
+	}
+	.menu-btn-active span{
+		height: 0;
+	}
+	.menu-btn-active span:before{
+		transform: rotate(45deg);
+	}
+	.menu-btn-active span:after{
+		transform: rotate(-45deg);
+	}
+
+	.menu-block{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.menu-nav{
+		display: block;
+		margin-top: 10px;
+		transition: 0.5s;
+		transform-origin: right-center;
+		transform: scaleX(0) translateX(20%);
+		opacity: 0;
+	}
+	.menu-nav-link{
+		display: inline-block;
+		margin-right: 15px;
+	}
+	.menu-nav-active{
+		transform: scaleX(1) translateX(0%);
+		opacity: 1;
+	}
+	.logo_block{
+		display: none;
+		transition: 0.5s;
+	}
+	header{
+		width: 485px;
+	}
+}
